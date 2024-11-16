@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.featured-news {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f0f0f0;
+}
+
+.featured-news img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.featured-news .featured-text {
+    width: 60%;
+}
+
+.featured-news .featured-text h2 {
+    margin-top: 0;
+}
+
+.latest-news {
+    padding: 20px;
+}
+
+.latest-news h3 {
+    margin-top: 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.news-grid article {
+    background-color: #f0f0f0;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.news-grid article img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.news-grid article h4 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+}
+
+.news-grid article p {
+    font-size: 14px;
+    margin: 5px 0;
+    flex-grow: 1;
+}
+
+.news-grid article a {
+    text-decoration: none;
+    color: white;
+    background-color: #8b0000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.buttonClass {
+    margin-top: auto; /* Автоматический отступ сверху */
+    justify-content: left;
+    text-align: left;
+    margin: 20px;
+}
+
+button.readMore {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+button.readMore a {
+    text-decoration: none;
+    color: white;
+    background-color: #8b0000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
